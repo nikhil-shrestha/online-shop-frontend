@@ -1,12 +1,17 @@
 import React from "react";
 
+import logo from "../../../assets/images/logo.png";
+import search from "../../../assets/images/search.svg";
+import account from "../../../assets/images/account.svg";
+import cart from "../../../assets/images/basket.svg";
+
 const upperHeader = () => {
   return (
     <nav className="navbar navbar-expand-md sticky-top">
       <div className="container">
         <div className="d-flex align-items-center w-100">
           <a className="navbar-brand" href="#">
-            <img src="assets/images/logo.png" className="logo" />
+            <img src={logo} className="logo" />
           </a>
           <button
             className="navbar-toggler"
@@ -206,7 +211,7 @@ const upperHeader = () => {
               >
                 <input type="text" className="navsearch" />
                 <button className="searchbtn">
-                  <img src="assets/images/search.svg" />
+                  <img src={search} alt="Search" />
                 </button>
               </li>
             </ul>
@@ -218,10 +223,7 @@ const upperHeader = () => {
                   id="dropdown01"
                   data-toggle="dropdown"
                 >
-                  <img
-                    src="assets/images/account.svg"
-                    className="float-right menuicon"
-                  />
+                  <img src={account} className="float-right menuicon" />
                   My Account
                   <br />
                   <small>Login</small>
@@ -256,10 +258,7 @@ const upperHeader = () => {
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                  <img
-                    src="assets/images/basket.svg"
-                    className="float-right menuicon"
-                  />
+                  <img src={cart} className="float-right menuicon" />
                   SHOPPING <br className="hidden-xs" />
                   BORA
                 </a>

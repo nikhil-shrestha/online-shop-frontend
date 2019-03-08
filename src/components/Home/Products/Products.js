@@ -1,10 +1,23 @@
 import React from "react";
+
+import fav from "../../../assets/images/fav.png";
+import unfav from "../../../assets/images/unfav.png";
+import cart from "../../../assets/images/cart.svg";
+import product1 from "../../../assets/images/thumb1.jpg";
+import product2 from "../../../assets/images/thumb2.jpg";
+import product3 from "../../../assets/images/thumb3.jpg";
+import product4 from "../../../assets/images/thumb4.jpg";
+import product5 from "../../../assets/images/thumb5.jpg";
+import product6 from "../../../assets/images/thumb6.jpg";
+import product7 from "../../../assets/images/thumb7.jpg";
+import product8 from "../../../assets/images/thumb8.jpg";
+
 const products = () => (
   <section className="container">
     <h2>FEATURED PRODUCTS</h2>
     <div className="listbundle">
       <div className="productlist animated fadeInUp animation1">
-        <img src="assets/images/thumb2.jpg" alt="Thumb" />
+        <img src={product1} alt="Thumb" />
         <a
           href="#"
           title="Quick View"
@@ -24,20 +37,13 @@ const products = () => (
               </td>
               <td className="">
                 <div className="favtoggle">
-                  <img src="assets/images/fav.png" />
-                  <img
-                    src="assets/images/unfav.png"
-                    style={{ display: "none" }}
-                  />
+                  <img src={fav} />
+                  <img src={unfav} style={{ display: "none" }} />
                 </div>
               </td>
               <td className="">
                 <a href="#" title="Add to Cart">
-                  <img
-                    src="assets/images/cart.svg"
-                    className="addtocart"
-                    alt="cart"
-                  />
+                  <img src={cart} className="addtocart" alt="cart" />
                 </a>
               </td>
             </tr>
@@ -46,7 +52,7 @@ const products = () => (
       </div>
 
       <div className="productlist animated fadeInUp animation2">
-        <img src="assets/images/thumb1.jpg" alt="Thumb" />
+        <img src={product2} alt="Thumb" />
         <a
           href="#"
           title="Quick View"
@@ -66,28 +72,22 @@ const products = () => (
               </td>
               <td className="">
                 <div className="favtoggle">
-                  <img src="assets/images/fav.png" />
-                  <img
-                    src="assets/images/unfav.png"
-                    style={{ display: "none" }}
-                  />
+                  <img src={fav} />
+                  <img src={unfav} style={{ display: "none" }} />
                 </div>
               </td>
               <td className="">
                 <a href="#" title="Add to Cart">
-                  <img
-                    src="assets/images/cart.svg"
-                    className="addtocart"
-                    alt="cart"
-                  />
+                  <img src={cart} className="addtocart" alt="cart" />
                 </a>
               </td>
             </tr>
           </table>
         </div>
       </div>
+
       <div className="productlist animated fadeInUp animation3">
-        <img src="assets/images/thumb3.jpg" alt="Thumb" />
+        <img src={product3} alt="Thumb" />
         <a
           href="#"
           title="Quick View"
@@ -107,28 +107,22 @@ const products = () => (
               </td>
               <td className="">
                 <div className="favtoggle">
-                  <img src="assets/images/fav.png" />
-                  <img
-                    src="assets/images/unfav.png"
-                    style={{ display: "none" }}
-                  />
+                  <img src={fav} />
+                  <img src={unfav} style={{ display: "none" }} />
                 </div>
               </td>
               <td className="">
                 <a href="#" title="Add to Cart">
-                  <img
-                    src="assets/images/cart.svg"
-                    className="addtocart"
-                    alt="cart"
-                  />
+                  <img src={cart} className="addtocart" alt="cart" />
                 </a>
               </td>
             </tr>
           </table>
         </div>
       </div>
+
       <div className="productlist animated fadeInUp animation4">
-        <img src="assets/images/thumb4.jpg" alt="Thumb" />
+        <img src={product4} alt="Thumb" />
         <a
           href="#"
           title="Quick View"
@@ -148,28 +142,22 @@ const products = () => (
               </td>
               <td className="">
                 <div className="favtoggle">
-                  <img src="assets/images/fav.png" />
-                  <img
-                    src="assets/images/unfav.png"
-                    style={{ display: "none" }}
-                  />
+                  <img src={fav} />
+                  <img src={unfav} style={{ display: "none" }} />
                 </div>
               </td>
               <td className="">
                 <a href="#" title="Add to Cart">
-                  <img
-                    src="assets/images/cart.svg"
-                    className="addtocart"
-                    alt="cart"
-                  />
+                  <img src={cart} className="addtocart" alt="cart" />
                 </a>
               </td>
             </tr>
           </table>
         </div>
       </div>
+
       <div className="productlist animated fadeInUp animation5">
-        <img src="assets/images/thumb5.jpg" alt="Thumb" />
+        <img src={product5} alt="Thumb" />
         <a
           href="#"
           title="Quick View"
@@ -189,28 +177,22 @@ const products = () => (
               </td>
               <td className="">
                 <div className="favtoggle">
-                  <img src="assets/images/fav.png" />
-                  <img
-                    src="assets/images/unfav.png"
-                    style={{ display: "none" }}
-                  />
+                  <img src={fav} />
+                  <img src={unfav} style={{ display: "none" }} />
                 </div>
               </td>
               <td className="">
                 <a href="#" title="Add to Cart">
-                  <img
-                    src="assets/images/cart.svg"
-                    className="addtocart"
-                    alt="cart"
-                  />
+                  <img src={cart} className="addtocart" alt="cart" />
                 </a>
               </td>
             </tr>
           </table>
         </div>
       </div>
+
       <div className="productlist animated fadeInUp animation6">
-        <img src="assets/images/thumb6.jpg" alt="Thumb" />
+        <img src={product6} alt="Thumb" />
         <a
           href="#"
           title="Quick View"
@@ -230,28 +212,22 @@ const products = () => (
               </td>
               <td className="">
                 <div className="favtoggle">
-                  <img src="assets/images/fav.png" />
-                  <img
-                    src="assets/images/unfav.png"
-                    style={{ display: "none" }}
-                  />
+                  <img src={fav} />
+                  <img src={unfav} style={{ display: "none" }} />
                 </div>
               </td>
               <td className="">
                 <a href="#" title="Add to Cart">
-                  <img
-                    src="assets/images/cart.svg"
-                    className="addtocart"
-                    alt="cart"
-                  />
+                  <img src={cart} className="addtocart" alt="cart" />
                 </a>
               </td>
             </tr>
           </table>
         </div>
       </div>
+
       <div className="productlist animated fadeInUp animation7">
-        <img src="assets/images/thumb7.jpg" alt="Thumb" />
+        <img src={product7} alt="Thumb" />
         <a
           href="#"
           title="Quick View"
@@ -271,28 +247,22 @@ const products = () => (
               </td>
               <td className="">
                 <div className="favtoggle">
-                  <img src="assets/images/fav.png" />
-                  <img
-                    src="assets/images/unfav.png"
-                    style={{ display: "none" }}
-                  />
+                  <img src={fav} />
+                  <img src={unfav} style={{ display: "none" }} />
                 </div>
               </td>
               <td className="">
                 <a href="#" title="Add to Cart">
-                  <img
-                    src="assets/images/cart.svg"
-                    className="addtocart"
-                    alt="cart"
-                  />
+                  <img src={cart} className="addtocart" alt="cart" />
                 </a>
               </td>
             </tr>
           </table>
         </div>
       </div>
+
       <div className="productlist animated fadeInUp animation8">
-        <img src="assets/images/thumb8.jpg" alt="Thumb" />
+        <img src={product8} alt="Thumb" />
         <a
           href="#"
           title="Quick View"
@@ -312,20 +282,13 @@ const products = () => (
               </td>
               <td className="">
                 <div className="favtoggle">
-                  <img src="assets/images/fav.png" />
-                  <img
-                    src="assets/images/unfav.png"
-                    style={{ display: "none" }}
-                  />
+                  <img src={fav} />
+                  <img src={unfav} style={{ display: "none" }} />
                 </div>
               </td>
               <td className="">
                 <a href="#" title="Add to Cart">
-                  <img
-                    src="assets/images/cart.svg"
-                    className="addtocart"
-                    alt="cart"
-                  />
+                  <img src={cart} className="addtocart" alt="cart" />
                 </a>
               </td>
             </tr>

@@ -1,5 +1,8 @@
 import React from "react";
 
+import skype from "../../../assets/images/skype.svg";
+import phone from "../../../assets/images/phone.svg";
+
 const upperHeader = () => {
   return (
     <div className="uppernav">
@@ -26,10 +29,10 @@ const upperHeader = () => {
             <option>USD</option>
           </select>
           <a href="skype:itsmesushan">
-            <img src="assets/images/skype.svg" alt="Skype" /> Skype
+            <img src={skype} alt="Skype" /> Skype
           </a>
           <a href="callto:9843779601">
-            <img src="assets/images/phone.svg" alt="Skype" /> 9843779601
+            <img src={phone} alt="Phone" /> 9843779601
           </a>
         </div>
       </div>

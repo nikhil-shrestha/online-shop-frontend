@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
 import Aux from "../../hoc/Aux/Aux";
-
 import HeaderSlider from "../../components/Home/Slider/Header/Header";
 import Products from "../../components/Home/Products/Products";
 import SpecialProducts from "../../components/Home/SpecialProducts/SpecialProducts";
@@ -9,6 +8,9 @@ import Categories from "../../components/Home/Categories/Categories";
 import Blog from "../../components/Home/Blog/Blog";
 import Testimonials from "../../components/Home/Testimonials/Testimonials";
 import FooterSlider from "../../components/Home/Slider/Footer/Footer";
+
+import banner from "../../assets/images/offer-banner.png";
+import curtain from "../../assets/images/curtain.png";
 
 class Home extends Component {
   render() {
@@ -24,11 +26,7 @@ class Home extends Component {
           <div className="subbanner-inner">
             <div className="banner-img">
               <a href="#" className="">
-                <img
-                  src="assets/images/offer-banner.png"
-                  alt="Offer Banner"
-                  className="img-fluid"
-                />
+                <img src={banner} alt="Offer Banner" className="img-fluid" />
               </a>
             </div>
             <div className="banner-text">
@@ -63,7 +61,7 @@ class Home extends Component {
               <div className="sub_banner2 sub_banner">
                 <div className="banner_image">
                   <a href="#">
-                    <img alt="" src="assets/images/curtain.png" />
+                    <img alt="" src={curtain} />
                   </a>
                 </div>
                 <div className="banner_text">
@@ -99,13 +97,13 @@ class Home extends Component {
 
         <section>
           <div className="container">
-            <div className="row" />
-
-            <div className="col-md-6 blog">
-              <Blog />
-            </div>
-            <div className="col-md-6 blog">
-              <Testimonials />
+            <div className="row">
+              <div className="col-md-6 blog">
+                <Blog />
+              </div>
+              <div className="col-md-6 blog">
+                <Testimonials />
+              </div>
             </div>
           </div>
         </section>

@@ -1,5 +1,9 @@
 import React from "react";
 
+import slide1 from "../../../../assets/images/slide1.jpg";
+import slide2 from "../../../../assets/images/slide2.jpg";
+import slide3 from "../../../../assets/images/slide3.jpg";
+
 const headPanel = () => {
   return (
     <div className="container slider">
@@ -21,25 +25,17 @@ const headPanel = () => {
             </ol>
             <div className="carousel-inner">
               <div className="carousel-item active">
-                <img
-                  className="d-block w-100"
-                  src="assets/images/slide1.jpg"
-                  alt="First slide"
-                />
+                <img className="d-block w-100" src={slide1} alt="First slide" />
               </div>
               <div className="carousel-item">
                 <img
                   className="d-block w-100"
-                  src="assets/images/slide2.jpg"
+                  src={slide2}
                   alt="Second slide"
                 />
               </div>
               <div className="carousel-item">
-                <img
-                  className="d-block w-100"
-                  src="assets/images/slide3.jpg"
-                  alt="Third slide"
-                />
+                <img className="d-block w-100" src={slide3} alt="Third slide" />
               </div>
             </div>
             <a
