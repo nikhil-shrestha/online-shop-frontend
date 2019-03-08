@@ -1,39 +1,42 @@
 import React from "react";
 
 const specialProducts = () => (
-  <section class="container">
+  <section className="container">
     <h2>SPECIAL PRODUCTS</h2>
-    <div class="listbundle">
-      <div class="productlist animated fadeInUp animation1">
+    <div className="listbundle">
+      <div className="productlist animated fadeInUp animation1">
         <img src="assets/images/thumb2.jpg" alt="Thumb" />
         <a
           href="#"
           title="Quick View"
-          class="quickview"
+          className="quickview"
           data-toggle="modal"
           data-target="#quickview"
         >
           QUICK VIEW
         </a>
-        <div class="content">
-          <div class="listcat">CUSION</div>
-          <div class="listsubcat">blue start print with cusion </div>
-          <table class="producttable">
+        <div className="content">
+          <div className="listcat">CUSION</div>
+          <div className="listsubcat">blue start print with cusion </div>
+          <table className="producttable">
             <tr>
               <td>
-                <span class="float-left price">Rs. 3,000.00</span>
+                <span className="float-left price">Rs. 3,000.00</span>
               </td>
-              <td class="">
-                <div class="favtoggle">
+              <td className="">
+                <div className="favtoggle">
                   <img src="assets/images/fav.png" />
-                  <img src="assets/images/unfav.png" style="display:none" />
+                  <img
+                    src="assets/images/unfav.png"
+                    style={{ display: "none" }}
+                  />
                 </div>
               </td>
-              <td class="">
+              <td className="">
                 <a href="#" title="Add to Cart">
                   <img
                     src="assets/images/cart.svg"
-                    class="addtocart"
+                    className="addtocart"
                     alt="cart"
                   />
                 </a>
@@ -42,36 +45,39 @@ const specialProducts = () => (
           </table>
         </div>
       </div>
-      <div class="productlist animated fadeInUp animation2">
+      <div className="productlist animated fadeInUp animation2">
         <img src="assets/images/thumb1.jpg" alt="Thumb" />
         <a
           href="#"
           title="Quick View"
-          class="quickview"
+          className="quickview"
           data-toggle="modal"
           data-target="#quickview"
         >
           QUICK VIEW
         </a>
-        <div class="content">
-          <div class="listcat">CUSION</div>
-          <div class="listsubcat">blue start print with cusion </div>
-          <table class="producttable">
+        <div className="content">
+          <div className="listcat">CUSION</div>
+          <div className="listsubcat">blue start print with cusion </div>
+          <table className="producttable">
             <tr>
               <td>
-                <span class="float-left price">Rs. 3,000.00</span>
+                <span className="float-left price">Rs. 3,000.00</span>
               </td>
-              <td class="">
-                <div class="favtoggle">
+              <td className="">
+                <div className="favtoggle">
                   <img src="assets/images/fav.png" />
-                  <img src="assets/images/unfav.png" style="display:none" />
+                  <img
+                    src="assets/images/unfav.png"
+                    style={{ display: "none" }}
+                  />
                 </div>
               </td>
-              <td class="">
+              <td className="">
                 <a href="#" title="Add to Cart">
                   <img
                     src="assets/images/cart.svg"
-                    class="addtocart"
+                    className="addtocart"
                     alt="cart"
                   />
                 </a>
@@ -80,36 +86,39 @@ const specialProducts = () => (
           </table>
         </div>
       </div>
-      <div class="productlist animated fadeInUp animation3">
+      <div className="productlist animated fadeInUp animation3">
         <img src="assets/images/thumb3.jpg" alt="Thumb" />
         <a
           href="#"
           title="Quick View"
-          class="quickview"
+          className="quickview"
           data-toggle="modal"
           data-target="#quickview"
         >
           QUICK VIEW
         </a>
-        <div class="content">
-          <div class="listcat">CUSION</div>
-          <div class="listsubcat">blue start print with cusion </div>
-          <table class="producttable">
+        <div className="content">
+          <div className="listcat">CUSION</div>
+          <div className="listsubcat">blue start print with cusion </div>
+          <table className="producttable">
             <tr>
               <td>
-                <span class="float-left price">Rs. 3,000.00</span>
+                <span className="float-left price">Rs. 3,000.00</span>
               </td>
-              <td class="">
-                <div class="favtoggle">
+              <td className="">
+                <div className="favtoggle">
                   <img src="assets/images/fav.png" />
-                  <img src="assets/images/unfav.png" style="display:none" />
+                  <img
+                    src="assets/images/unfav.png"
+                    style={{ display: "none" }}
+                  />
                 </div>
               </td>
-              <td class="">
+              <td className="">
                 <a href="#" title="Add to Cart">
                   <img
                     src="assets/images/cart.svg"
-                    class="addtocart"
+                    className="addtocart"
                     alt="cart"
                   />
                 </a>
@@ -118,36 +127,39 @@ const specialProducts = () => (
           </table>
         </div>
       </div>
-      <div class="productlist animated fadeInUp animation4">
+      <div className="productlist animated fadeInUp animation4">
         <img src="assets/images/thumb4.jpg" alt="Thumb" />
         <a
           href="#"
           title="Quick View"
-          class="quickview"
+          className="quickview"
           data-toggle="modal"
           data-target="#quickview"
         >
           QUICK VIEW
         </a>
-        <div class="content">
-          <div class="listcat">CUSION</div>
-          <div class="listsubcat">blue start print with cusion </div>
-          <table class="producttable">
+        <div className="content">
+          <div className="listcat">CUSION</div>
+          <div className="listsubcat">blue start print with cusion </div>
+          <table className="producttable">
             <tr>
               <td>
-                <span class="float-left price">Rs. 3,000.00</span>
+                <span className="float-left price">Rs. 3,000.00</span>
               </td>
-              <td class="">
-                <div class="favtoggle">
+              <td className="">
+                <div className="favtoggle">
                   <img src="assets/images/fav.png" />
-                  <img src="assets/images/unfav.png" style="display:none" />
+                  <img
+                    src="assets/images/unfav.png"
+                    style={{ display: "none" }}
+                  />
                 </div>
               </td>
-              <td class="">
+              <td className="">
                 <a href="#" title="Add to Cart">
                   <img
                     src="assets/images/cart.svg"
-                    class="addtocart"
+                    className="addtocart"
                     alt="cart"
                   />
                 </a>

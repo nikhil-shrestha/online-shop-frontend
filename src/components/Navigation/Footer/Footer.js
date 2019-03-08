@@ -2,20 +2,20 @@ import React from "react";
 
 const footer = () => (
   <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
+    <div className="container">
+      <div className="row">
+        <div className="col-md-3">
           <strong>NEWSLETTER</strong>
           <br />
-          <div class="desc">Stay updated with our latest offers.</div>
+          <div className="desc">Stay updated with our latest offers.</div>
           <input type="email" name="" placeholder="Enter your email address" />
           <input type="button" name="" value="SUBSCRIBE" />
         </div>
-        <div class="col-md-1" />
-        <div class="col-md-2">
+        <div className="col-md-1" />
+        <div className="col-md-2">
           <strong>CUSTOMER</strong>
           <br />
-          <ul class="list-unstyled">
+          <ul className="list-unstyled">
             <li>
               <a href="#" title="Shipping">
                 Shipping
@@ -43,11 +43,11 @@ const footer = () => (
             </li>
           </ul>
         </div>
-        <div class="col-md-1" />
-        <div class="col-md-2">
+        <div className="col-md-1" />
+        <div className="col-md-2">
           <strong>COMPANY</strong>
           <br />
-          <ul class="list-unstyled">
+          <ul className="list-unstyled">
             <li>
               <a href="#" title="Our story">
                 Our story
@@ -75,16 +75,16 @@ const footer = () => (
             </li>
           </ul>
         </div>
-        <div class="col-md-1" />
-        <div class="col-md-2">
+        <div className="col-md-1" />
+        <div className="col-md-2">
           <strong>FEEDBACK</strong>
           <br />
-          <div class="desc">
+          <div className="desc">
             We would like to hear from you with any feedback about our website
             or products,
           </div>
           <br />
-          <div class="desc">
+          <div className="desc">
             <a href="mailto:info@mayadecor.com" title="Send feedback to us">
               info@mayadecor.com
             </a>

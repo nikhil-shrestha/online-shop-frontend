@@ -2,17 +2,17 @@ import React from "react";
 
 const headPanel = () => {
   render(
-    <div class="productlisting">
-      <div class="container">
+    <div className="productlisting">
+      <div className="container">
         <ul>
           <li>
             <a href="#">Wall Decor</a>
           </li>
           <li>
             <a href="#">Bedding</a>
-            <ul class="shownav imgandlist">
+            <ul className="shownav imgandlist">
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   WALL MURAL 2
@@ -37,7 +37,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   CEILING DECOR
@@ -62,7 +62,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   WALL STICKER AND DECALS
@@ -87,7 +87,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   WALL CLOCK
@@ -112,7 +112,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   WALL STICKER
@@ -137,7 +137,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   WALL MURAL
@@ -162,7 +162,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   CEILING DECOR
@@ -187,7 +187,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   CANVAS
@@ -212,7 +212,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   WALL STICKER AND DECALS
@@ -237,7 +237,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   WALL CLOCK
@@ -265,9 +265,9 @@ const headPanel = () => {
           </li>
           <li>
             <a href="#">Wallpaper</a>
-            <ul class="shownav imgandlist">
+            <ul className="shownav imgandlist">
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   WALL MURAL 3
@@ -292,7 +292,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   CEILING DECOR
@@ -317,7 +317,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   WALL STICKER AND DECALS
@@ -342,7 +342,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   WALL CLOCK
@@ -367,7 +367,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   WALL STICKER
@@ -392,7 +392,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   WALL MURAL
@@ -417,7 +417,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   CEILING DECOR
@@ -442,7 +442,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   CANVAS
@@ -467,7 +467,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   WALL STICKER AND DECALS
@@ -492,7 +492,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   WALL CLOCK
@@ -520,9 +520,9 @@ const headPanel = () => {
           </li>
           <li>
             <a href="#">Artificial Grass</a>
-            <ul class="shownav imgandlist">
+            <ul className="shownav imgandlist">
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   WALL MURAL 4
@@ -547,7 +547,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   CEILING DECOR
@@ -572,7 +572,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   WALL STICKER AND DECALS
@@ -597,7 +597,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   WALL CLOCK
@@ -622,7 +622,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   WALL STICKER
@@ -647,7 +647,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   WALL MURAL
@@ -672,7 +672,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   CEILING DECOR
@@ -697,7 +697,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   CANVAS
@@ -722,7 +722,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   WALL STICKER AND DECALS
@@ -747,7 +747,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   WALL CLOCK
@@ -775,9 +775,9 @@ const headPanel = () => {
           </li>
           <li>
             <a href="#">Furnishing</a>
-            <ul class="shownav imgandlist">
+            <ul className="shownav imgandlist">
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   WALL MURAL 5
@@ -802,7 +802,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   CEILING DECOR
@@ -827,7 +827,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   WALL STICKER AND DECALS
@@ -852,7 +852,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   WALL CLOCK
@@ -877,7 +877,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   WALL STICKER
@@ -902,7 +902,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   WALL MURAL
@@ -927,7 +927,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   CEILING DECOR
@@ -952,7 +952,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   CANVAS
@@ -977,7 +977,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   WALL STICKER AND DECALS
@@ -1002,7 +1002,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   WALL CLOCK
@@ -1030,9 +1030,9 @@ const headPanel = () => {
           </li>
           <li>
             <a href="#">Home Accessories</a>
-            <ul class="shownav imgandlist">
+            <ul className="shownav imgandlist">
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   WALL MURAL 6
@@ -1057,7 +1057,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   CEILING DECOR
@@ -1082,7 +1082,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   WALL STICKER AND DECALS
@@ -1107,7 +1107,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   WALL CLOCK
@@ -1132,7 +1132,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   WALL STICKER
@@ -1157,7 +1157,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   WALL MURAL
@@ -1182,7 +1182,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   CEILING DECOR
@@ -1207,7 +1207,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   CANVAS
@@ -1232,7 +1232,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   WALL STICKER AND DECALS
@@ -1257,7 +1257,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   WALL CLOCK
@@ -1285,9 +1285,9 @@ const headPanel = () => {
           </li>
           <li>
             <a href="#">Exteriors</a>
-            <ul class="shownav imgandlist">
+            <ul className="shownav imgandlist">
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   WALL MURAL 8
@@ -1312,7 +1312,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   CEILING DECOR
@@ -1337,7 +1337,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   WALL STICKER AND DECALS
@@ -1362,7 +1362,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   WALL CLOCK
@@ -1387,7 +1387,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   WALL STICKER
@@ -1412,7 +1412,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   WALL MURAL
@@ -1437,7 +1437,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   CEILING DECOR
@@ -1462,7 +1462,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   CANVAS
@@ -1487,7 +1487,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   WALL STICKER AND DECALS
@@ -1512,7 +1512,7 @@ const headPanel = () => {
                 </a>
               </li>
               <li>
-                <a href="#" class="imagetitle">
+                <a href="#" className="imagetitle">
                   <img src="http://placehold.it/100x30" alt="Image" />
                   <br />
                   WALL CLOCK

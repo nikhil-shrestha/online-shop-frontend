@@ -2,56 +2,56 @@ import React from "react";
 
 const quickView = () => (
   <div
-    class="modal fade"
+    className="modal fade"
     id="quickview"
     tabindex="-1"
     role="dialog"
     aria-labelledby="quickview"
     aria-hidden="true"
   >
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="quickview">
+    <div className="modal-dialog modal-lg" role="document">
+      <div className="modal-content">
+        <div className="modal-header">
+          <h5 className="modal-title" id="quickview">
             Quick View
           </h5>
           <button
             type="button"
-            class="close"
+            className="close"
             data-dismiss="modal"
             aria-label="Close"
           >
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body">
-          <div class="row">
-            <div class="col-md-5">
+        <div className="modal-body">
+          <div className="row">
+            <div className="col-md-5">
               <img
-                class="w-100"
+                className="w-100"
                 src="http://placehold.it/380"
                 alt="First slide"
               />
             </div>
-            <div class="col-md-7 description">
-              <div class="favtoggle float-right">
+            <div className="col-md-7 description">
+              <div className="favtoggle float-right">
                 <img src="assets/images/fav.png" />
                 <img src="assets/images/unfav.png" style="display:none" />
               </div>
-              <div class="author">By KAPPA</div>
-              <div class="productname">Kappa bedsheet</div>
-              <div class="category">
+              <div className="author">By KAPPA</div>
+              <div className="productname">Kappa bedsheet</div>
+              <div className="category">
                 KAAPA White/Red Floral Printed Single Size Bedsheet
               </div>
               <br />
-              <div class="currency">NPR</div>
-              <div class="amount">1,500.00</div>
+              <div className="currency">NPR</div>
+              <div className="amount">1,500.00</div>
               <br />
-              <div class="quantity">Quantity</div>
-              <div class="input-group datecounter float-left">
+              <div className="quantity">Quantity</div>
+              <div className="input-group datecounter float-left">
                 <button
                   type="button"
-                  class="btn btn-default btn-number plus"
+                  className="btn btn-default btn-number plus"
                   disabled="disabled"
                   data-type="minus"
                   data-field="quant[1]"
@@ -61,21 +61,21 @@ const quickView = () => (
                 <input
                   type="text"
                   name="quant[1]"
-                  class="form-control input-number"
+                  className="form-control input-number"
                   value="1"
                   min="1"
                   max="10"
                 />
                 <button
                   type="button"
-                  class="btn btn-default btn-number minus"
+                  className="btn btn-default btn-number minus"
                   data-type="plus"
                   data-field="quant[1]"
                 >
                   +
                 </button>
               </div>
-              <a href="" class="lgaddtocart">
+              <a href="" className="lgaddtocart">
                 Add to Cart
               </a>
               <br />

@@ -1,7 +1,7 @@
 import React from "react";
 
 const upperHeader = () => {
-  render(
+  return (
     <nav className="navbar navbar-expand-md sticky-top">
       <div className="container">
         <div className="d-flex align-items-center w-100">
@@ -200,7 +200,10 @@ const upperHeader = () => {
               </li>
             </ul>
             <ul className="nav navbar-nav ml-auto w-75 justify-content-center searchnav">
-              <li className="nav-item" style="width: 100%; position: relative;">
+              <li
+                className="nav-item"
+                style={{ width: "100%", position: "relative" }}
+              >
                 <input type="text" className="navsearch" />
                 <button className="searchbtn">
                   <img src="assets/images/search.svg" />

@@ -20,29 +20,29 @@ class Home extends Component {
         <Categories />
         <SpecialProducts />
 
-        <section class="container">
-          <div class="subbanner-inner">
-            <div class="banner-img">
-              <a href="#" class="">
+        <section className="container">
+          <div className="subbanner-inner">
+            <div className="banner-img">
+              <a href="#" className="">
                 <img
                   src="assets/images/offer-banner.png"
                   alt="Offer Banner"
-                  class="img-fluid"
+                  className="img-fluid"
                 />
               </a>
             </div>
-            <div class="banner-text">
-              <div class="bnr-text">get your lovedones</div>
-              <div class="bnr-title">a new cushion</div>
+            <div className="banner-text">
+              <div className="bnr-text">get your lovedones</div>
+              <div className="bnr-title">a new cushion</div>
             </div>
           </div>
         </section>
 
-        <section class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="sub_banner1 sub_banner">
-                <div class="banner_image">
+        <section className="container">
+          <div className="row">
+            <div className="col-md-4">
+              <div className="sub_banner1 sub_banner">
+                <div className="banner_image">
                   <a href="#">
                     <img
                       alt=""
@@ -50,34 +50,34 @@ class Home extends Component {
                     />
                   </a>
                 </div>
-                <div class="banner_text">
-                  <div class="text1">Decorative</div>
-                  <div class="text2">Painting</div>
-                  <div class="view_button">
+                <div className="banner_text">
+                  <div className="text1">Decorative</div>
+                  <div className="text2">Painting</div>
+                  <div className="view_button">
                     <a href="#"> view collection </a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="sub_banner2 sub_banner">
-                <div class="banner_image">
+            <div className="col-md-4">
+              <div className="sub_banner2 sub_banner">
+                <div className="banner_image">
                   <a href="#">
                     <img alt="" src="assets/images/curtain.png" />
                   </a>
                 </div>
-                <div class="banner_text">
-                  <div class="text1">Interiors</div>
-                  <div class="text2">Curtain</div>
-                  <div class="view_button">
+                <div className="banner_text">
+                  <div className="text1">Interiors</div>
+                  <div className="text2">Curtain</div>
+                  <div className="view_button">
                     <a href="#"> view collection </a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="sub_banner3 sub_banner">
-                <div class="banner_image">
+            <div className="col-md-4">
+              <div className="sub_banner3 sub_banner">
+                <div className="banner_image">
                   <a href="#">
                     <img
                       alt=""
@@ -85,10 +85,10 @@ class Home extends Component {
                     />
                   </a>
                 </div>
-                <div class="banner_text">
-                  <div class="text1">Cushion</div>
-                  <div class="text2">Softer</div>
-                  <div class="view_button">
+                <div className="banner_text">
+                  <div className="text1">Cushion</div>
+                  <div className="text2">Softer</div>
+                  <div className="view_button">
                     <a href="#"> view collection </a>
                   </div>
                 </div>
@@ -98,16 +98,21 @@ class Home extends Component {
         </section>
 
         <section>
-          <div class="container">
-            <div class="row" />
-            <Blog />
-            <Testimonials />
+          <div className="container">
+            <div className="row" />
+
+            <div className="col-md-6 blog">
+              <Blog />
+            </div>
+            <div className="col-md-6 blog">
+              <Testimonials />
+            </div>
           </div>
         </section>
 
         <section>
-          <div class="container">
-            <div class="col-md-6">
+          <div className="container">
+            <div className="col-md-6">
               <div id="latestblog" />
             </div>
           </div>

@@ -1,8 +1,10 @@
 import React from "react";
 
+import Aux from "../../../hoc/Aux/Aux";
+
 const blog = () => {
   return (
-    <div className="col-md-6 blog">
+    <Aux>
       <h2>Lastest Blog</h2>
       <div className="blog-image-inner">
         <div className="blog-left">
@@ -34,7 +36,7 @@ const blog = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Aux>
   );
 };
 

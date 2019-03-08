@@ -25,7 +25,10 @@ const products = () => (
               <td className="">
                 <div className="favtoggle">
                   <img src="assets/images/fav.png" />
-                  <img src="assets/images/unfav.png" style="display:none" />
+                  <img
+                    src="assets/images/unfav.png"
+                    style={{ display: "none" }}
+                  />
                 </div>
               </td>
               <td className="">
@@ -64,7 +67,10 @@ const products = () => (
               <td className="">
                 <div className="favtoggle">
                   <img src="assets/images/fav.png" />
-                  <img src="assets/images/unfav.png" style="display:none" />
+                  <img
+                    src="assets/images/unfav.png"
+                    style={{ display: "none" }}
+                  />
                 </div>
               </td>
               <td className="">
@@ -102,7 +108,10 @@ const products = () => (
               <td className="">
                 <div className="favtoggle">
                   <img src="assets/images/fav.png" />
-                  <img src="assets/images/unfav.png" style="display:none" />
+                  <img
+                    src="assets/images/unfav.png"
+                    style={{ display: "none" }}
+                  />
                 </div>
               </td>
               <td className="">
@@ -140,7 +149,10 @@ const products = () => (
               <td className="">
                 <div className="favtoggle">
                   <img src="assets/images/fav.png" />
-                  <img src="assets/images/unfav.png" style="display:none" />
+                  <img
+                    src="assets/images/unfav.png"
+                    style={{ display: "none" }}
+                  />
                 </div>
               </td>
               <td className="">
@@ -178,7 +190,10 @@ const products = () => (
               <td className="">
                 <div className="favtoggle">
                   <img src="assets/images/fav.png" />
-                  <img src="assets/images/unfav.png" style="display:none" />
+                  <img
+                    src="assets/images/unfav.png"
+                    style={{ display: "none" }}
+                  />
                 </div>
               </td>
               <td className="">
@@ -216,7 +231,10 @@ const products = () => (
               <td className="">
                 <div className="favtoggle">
                   <img src="assets/images/fav.png" />
-                  <img src="assets/images/unfav.png" style="display:none" />
+                  <img
+                    src="assets/images/unfav.png"
+                    style={{ display: "none" }}
+                  />
                 </div>
               </td>
               <td className="">
@@ -254,7 +272,10 @@ const products = () => (
               <td className="">
                 <div className="favtoggle">
                   <img src="assets/images/fav.png" />
-                  <img src="assets/images/unfav.png" style="display:none" />
+                  <img
+                    src="assets/images/unfav.png"
+                    style={{ display: "none" }}
+                  />
                 </div>
               </td>
               <td className="">
@@ -292,7 +313,10 @@ const products = () => (
               <td className="">
                 <div className="favtoggle">
                   <img src="assets/images/fav.png" />
-                  <img src="assets/images/unfav.png" style="display:none" />
+                  <img
+                    src="assets/images/unfav.png"
+                    style={{ display: "none" }}
+                  />
                 </div>
               </td>
               <td className="">

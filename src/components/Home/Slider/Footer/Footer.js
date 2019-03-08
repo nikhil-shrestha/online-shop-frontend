@@ -1,59 +1,59 @@
 import React from "react";
 
 const footer = () => (
-  <section class="container">
-    <div class="row">
-      <div class="col-md-1">
+  <section className="container">
+    <div className="row">
+      <div className="col-md-1">
         <a
-          class="carousel-control-prev"
+          className="carousel-control-prev"
           href="#smallcarousel"
           role="button"
           role="button"
           data-slide="prev"
         >
-          <img src="assets/images/left.svg" class="arrow" alt="Left" />
-          <span class="sr-only">Previous</span>
+          <img src="assets/images/left.svg" className="arrow" alt="Left" />
+          <span className="sr-only">Previous</span>
         </a>
       </div>
-      <div class="col-md-7">
-        <div class="carousel slide" data-ride="carousel" id="smallcarousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
+      <div className="col-md-7">
+        <div className="carousel slide" data-ride="carousel" id="smallcarousel">
+          <div className="carousel-inner">
+            <div className="carousel-item active">
               <img
-                class="d-block w-100"
+                className="d-block w-100"
                 src="assets/images/bedsheets.jpg"
                 alt="First slide"
               />
-              <div class="carousel-caption">
+              <div className="carousel-caption">
                 <h2>Los Angeles</h2>
               </div>
             </div>
-            <div class="carousel-item">
+            <div className="carousel-item">
               <img
-                class="d-block w-100"
+                className="d-block w-100"
                 src="assets/images/wallsticker.jpg"
                 alt="Second slide"
               />
-              <div class="carousel-caption">
+              <div className="carousel-caption">
                 <h2>Los Angeles</h2>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-md-1">
+      <div className="col-md-1">
         <a
-          class="carousel-control-next"
+          className="carousel-control-next"
           href="#smallcarousel"
           role="button"
           data-slide="next"
         >
-          <img src="assets/images/right.svg" class="arrow" alt="Right" />
-          <span class="sr-only">Next</span>
+          <img src="assets/images/right.svg" className="arrow" alt="Right" />
+          <span className="sr-only">Next</span>
         </a>
       </div>
-      <div class="col-md-3">
-        <table class="socialmedia">
+      <div className="col-md-3">
+        <table className="socialmedia">
           <tr>
             <td>
               <a href="#" title="Facebook">
