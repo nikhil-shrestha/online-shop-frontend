@@ -1,66 +1,123 @@
-import React from "react";
+import React, { Component } from "react";
+
+import {
+  Carousel,
+  CarouselItem,
+  CarouselControl,
+  CarouselIndicators
+} from "reactstrap";
 
 import slide1 from "../../../../assets/images/slide1.jpg";
 import slide2 from "../../../../assets/images/slide2.jpg";
 import slide3 from "../../../../assets/images/slide3.jpg";
 
-const headPanel = () => {
-  return (
-    <div className="container slider">
-      <div className="row">
-        <div className="col-12">
-          <div
-            id="carouselExampleIndicators"
-            className="carousel slide"
-            data-ride="carousel"
-          >
-            <ol className="carousel-indicators">
-              <li
-                data-target="#carouselExampleIndicators"
-                data-slide-to="0"
-                className="active"
+const items = [
+  {
+    src: slide1,
+    altText: "Slide 1",
+    caption: "Slide 1"
+  },
+  {
+    src: slide2,
+    altText: "Slide 2",
+    caption: "Slide 2"
+  },
+  {
+    src: slide3,
+    altText: "Slide 3",
+    caption: "Slide 3"
+  }
+];
+
+class Header extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { activeIndex: 0 };
+    this.next = this.next.bind(this);
+    this.previous = this.previous.bind(this);
+    this.goToIndex = this.goToIndex.bind(this);
+    this.onExiting = this.onExiting.bind(this);
+    this.onExited = this.onExited.bind(this);
+  }
+
+  onExiting() {
+    this.animating = true;
+  }
+
+  onExited() {
+    this.animating = false;
+  }
+
+  next() {
+    if (this.animating) return;
+    const nextIndex =
+      this.state.activeIndex === items.length - 1
+        ? 0
+        : this.state.activeIndex + 1;
+    this.setState({ activeIndex: nextIndex });
+  }
+
+  previous() {
+    if (this.animating) return;
+    const nextIndex =
+      this.state.activeIndex === 0
+        ? items.length - 1
+        : this.state.activeIndex - 1;
+    this.setState({ activeIndex: nextIndex });
+  }
+
+  goToIndex(newIndex) {
+    if (this.animating) return;
+    this.setState({ activeIndex: newIndex });
+  }
+
+  render() {
+    const { activeIndex } = this.state;
+
+    const slides = items.map(item => {
+      return (
+        <CarouselItem
+          onExiting={this.onExiting}
+          onExited={this.onExited}
+          key={item.src}
+        >
+          <img src={item.src} alt={item.altText} />
+        </CarouselItem>
+      );
+    });
+
+    return (
+      <div className="container slider">
+        <div className="row">
+          <div className="col-12">
+            <Carousel
+              className="carouselExampleIndicators"
+              activeIndex={activeIndex}
+              next={this.next}
+              previous={this.previous}
+            >
+              <CarouselIndicators
+                items={items}
+                activeIndex={activeIndex}
+                onClickHandler={this.goToIndex}
               />
-              <li data-target="#carouselExampleIndicators" data-slide-to="1" />
-              <li data-target="#carouselExampleIndicators" data-slide-to="2" />
-            </ol>
-            <div className="carousel-inner">
-              <div className="carousel-item active">
-                <img className="d-block w-100" src={slide1} alt="First slide" />
-              </div>
-              <div className="carousel-item">
-                <img
-                  className="d-block w-100"
-                  src={slide2}
-                  alt="Second slide"
-                />
-              </div>
-              <div className="carousel-item">
-                <img className="d-block w-100" src={slide3} alt="Third slide" />
-              </div>
-            </div>
-            <a
-              className="carousel-control-prev"
-              href="#carouselExampleIndicators"
-              role="button"
-              data-slide="prev"
-            >
-              <span className="carousel-control-prev-icon" aria-hidden="true" />
-              <span className="sr-only">Previous</span>
-            </a>
-            <a
-              className="carousel-control-next"
-              href="#carouselExampleIndicators"
-              role="button"
-              data-slide="next"
-            >
-              <span className="carousel-control-next-icon" aria-hidden="true" />
-              <span className="sr-only">Next</span>
-            </a>
+              {slides}
+              <CarouselControl
+                direction="prev"
+                directionText="Previous"
+                onClickHandler={this.previous}
+              />
+              <CarouselControl
+                direction="next"
+                directionText="Next"
+                onClickHandler={this.next}
+              />
+            </Carousel>
           </div>
         </div>
       </div>
-    </div>
-  );
-};
+    );
+  }
+}
 
-export default headPanel;
+export default Header;
