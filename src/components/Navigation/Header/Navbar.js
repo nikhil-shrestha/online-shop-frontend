@@ -1,236 +1,167 @@
-import React from "react";
+import React, { Component } from "react";
+
+import NavDropdown from "./NavDropdown/NavDropdown";
+import NavItems from "./NavItems/NavItems";
+import NavItem from "./NavItems/NavItem/NavItem";
 
 import logo from "../../../assets/images/logo.png";
 import search from "../../../assets/images/search.svg";
 import account from "../../../assets/images/account.svg";
 import cart from "../../../assets/images/basket.svg";
+import nav1 from "../../../assets/images/nav1.jpg";
+import nav2 from "../../../assets/images/nav2.jpg";
+import nav3 from "../../../assets/images/nav3.jpg";
+import nav4 from "../../../assets/images/nav4.jpg";
+import nav5 from "../../../assets/images/nav5.jpg";
+import nav6 from "../../../assets/images/nav6.jpg";
+import nav7 from "../../../assets/images/nav7.jpg";
+import nav8 from "../../../assets/images/nav8.jpg";
 
-const upperHeader = () => {
-  return (
-    <nav className="navbar navbar-expand-md sticky-top">
-      <div className="container">
-        <div className="d-flex align-items-center w-100">
-          <a className="navbar-brand" href="#">
-            <img src={logo} className="logo" />
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarsExampleDefault"
-            aria-controls="navbarsExampleDefault"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <div className="navbar-toggler-icon" />
-            <br />
-            <div className="navbar-toggler-icon" />
-            <br />
-            <div className="navbar-toggler-icon" />
-          </button>
-          <div className="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul className="nav navbar-nav ml-auto w-25 justify-content-start mainav actionbuttons">
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="#"
-                  id="dropdown01"
-                  data-toggle="dropdown"
-                >
-                  SHOP
-                  <br />
-                  NOW
-                </a>
-                <div className="dropdown-menu" aria-labelledby="dropdown">
+const CATEGORIES = [
+  {
+    name: "bedsheet",
+    image: nav1,
+    subcategories: [
+      {
+        name: "type1"
+      },
+      {
+        name: "type2"
+      }
+    ]
+  },
+  {
+    name: "canvas",
+    image: nav2,
+    subcategories: [
+      {
+        name: "type1"
+      },
+      {
+        name: "type2"
+      }
+    ]
+  },
+  {
+    name: "clock",
+    image: nav3,
+    subcategories: [
+      {
+        name: "type1"
+      },
+      {
+        name: "type2"
+      }
+    ]
+  },
+  {
+    name: "curtains",
+    image: nav4,
+    subcategories: [
+      {
+        name: "type1"
+      },
+      {
+        name: "type2"
+      }
+    ]
+  },
+  {
+    name: "cushion",
+    image: nav5,
+    subcategories: [
+      {
+        name: "type1"
+      },
+      {
+        name: "type2"
+      }
+    ]
+  },
+  {
+    name: "duvet",
+    image: nav6,
+    subcategories: [
+      {
+        name: "type1"
+      },
+      {
+        name: "type2"
+      }
+    ]
+  },
+  {
+    name: "wallpaper",
+    image: nav7,
+    subcategories: [
+      {
+        name: "type1"
+      },
+      {
+        name: "type2"
+      }
+    ]
+  },
+  {
+    name: "wallsticker",
+    image: nav8,
+    subcategories: [
+      {
+        name: "type1"
+      },
+      {
+        name: "type2"
+      }
+    ]
+  }
+];
+
+class Navbar extends Component {
+  state = {
+    isOpen: false
+  };
+
+  toggleCollapse = () => {
+    this.setState({ isOpen: !this.state.isOpen });
+  };
+  render() {
+    return (
+      <nav className="navbar navbar-expand-md sticky-top">
+        <div className="container">
+          <div className="d-flex align-items-center w-100">
+            <a className="navbar-brand" href="#">
+              <img src={logo} className="logo" />
+            </a>
+            <div
+              className="collapse navbar-collapse"
+              id="navbarsExampleDefault"
+            >
+              <ul className="nav navbar-nav ml-auto w-25 justify-content-start mainav actionbuttons">
+                <NavDropdown name="SHOP">
                   <ul className="list-inline">
-                    <li className="wow bounceInUp">
-                      <a href="#">
-                        bedsheet
-                        <br />
-                        <img src="assets/images/nav1.jpg" />
-                      </a>
-                      <ul className="list-unstyled">
-                        <li>
-                          <a href="#" title="type 1">
-                            type 1
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" title="type 2">
-                            type 2
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="$">
-                        canvas
-                        <br />
-                        <img src="assets/images/nav2.jpg" />
-                      </a>
-                      <ul className="list-unstyled">
-                        <li>
-                          <a href="#" title="1 panel canvas">
-                            1 panel canvas
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" title="3 panel canvas">
-                            3 panel canvas
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" title="5 panel canvas">
-                            5 panel canvas
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="$">
-                        clock
-                        <br />
-                        <img src="assets/images/nav3.jpg" />
-                      </a>
-                      <ul className="list-unstyled">
-                        <li>
-                          <a href="#" title="type 1">
-                            type 1
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" title="type 2">
-                            type 2
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="$">
-                        curtains
-                        <br />
-                        <img src="assets/images/nav4.jpg" />
-                      </a>
-                      <ul className="list-unstyled">
-                        <li>
-                          <a href="#" title="type 1">
-                            type 1
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" title="type 2">
-                            type 2
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="$">
-                        cushion
-                        <br />
-                        <img src="assets/images/nav5.jpg" />
-                      </a>
-                      <ul className="list-unstyled">
-                        <li>
-                          <a href="#" title="type 1">
-                            type 1
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="$">
-                        duvet
-                        <br />
-                        <img src="assets/images/nav6.jpg" />
-                      </a>
-                      <ul className="list-unstyled">
-                        <li>
-                          <a href="#" title="type 1">
-                            type 1
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="$">
-                        wall paper
-                        <br />
-                        <img src="assets/images/nav7.jpg" />
-                      </a>
-                      <ul className="list-unstyled">
-                        <li>
-                          <a href="#" title="type 1">
-                            type 1
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" title="type 1">
-                            type 2
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="$">
-                        wall sticker
-                        <br />
-                        <img src="assets/images/nav8.jpg" />
-                      </a>
-                      <ul className="list-unstyled">
-                        <li>
-                          <a href="#" title="bedroom">
-                            bedroom
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" title="family lounge">
-                            family lounge
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" title="kids room">
-                            kids room
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" title="nursery room">
-                            nursery room
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
+                    {CATEGORIES.map(category => {
+                      return <NavItems category={category} />;
+                    })}
                   </ul>
-                </div>
-              </li>
-            </ul>
-            <ul className="nav navbar-nav ml-auto w-75 justify-content-center searchnav">
-              <li
-                className="nav-item"
-                style={{ width: "100%", position: "relative" }}
-              >
-                <input type="text" className="navsearch" />
-                <button className="searchbtn">
-                  <img src={search} alt="Search" />
-                </button>
-              </li>
-            </ul>
-            <ul className="nav navbar-nav ml-auto w-75 justify-content-end actionbuttons righside">
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="#"
-                  id="dropdown01"
-                  data-toggle="dropdown"
+                </NavDropdown>
+              </ul>
+              <ul className="nav navbar-nav ml-auto w-75 justify-content-center searchnav">
+                <li
+                  className="nav-item"
+                  style={{ width: "100%", position: "relative" }}
                 >
-                  <img src={account} className="float-right menuicon" />
-                  My Account
-                  <br />
-                  <small>Login</small>
-                </a>
-                <div
-                  className="dropdown-menu credentials"
-                  aria-labelledby="dropdown"
+                  <input type="text" className="navsearch" />
+                  <button className="searchbtn">
+                    <img src={search} alt="Search" />
+                  </button>
+                </li>
+              </ul>
+              <ul className="nav navbar-nav ml-auto w-75 justify-content-end actionbuttons righside">
+                <NavDropdown
+                  name="My Account"
+                  image={account}
+                  subName
+                  credentials
                 >
                   <ul className="list-unstyled">
                     <li>
@@ -254,21 +185,21 @@ const upperHeader = () => {
                       </a>
                     </li>
                   </ul>
-                </div>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  <img src={cart} className="float-right menuicon" />
-                  SHOPPING <br className="hidden-xs" />
-                  BORA
-                </a>
-              </li>
-            </ul>
+                </NavDropdown>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    <img src={cart} className="float-right menuicon" />
+                    SHOPPING <br className="hidden-xs" />
+                    BORA
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
-  );
-};
+      </nav>
+    );
+  }
+}
 
-export default upperHeader;
+export default Navbar;
