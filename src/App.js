@@ -1,10 +1,15 @@
 import React, { Component } from "react";
+import { BrowserRouter } from "react-router-dom";
 
 import MyShop from "./containers/MyShop/MyShop";
 
 class App extends Component {
   render() {
-    return <MyShop />;
+    return (
+      <BrowserRouter>
+        <MyShop />
+      </BrowserRouter>
+    );
   }
 }
 
