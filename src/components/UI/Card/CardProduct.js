@@ -12,7 +12,7 @@ import fav from "../../../assets/images/fav.png";
 import unfav from "../../../assets/images/unfav.png";
 import cart from "../../../assets/images/cart.svg";
 
-const simpleCard = ({ index }) => {
+const simpleCard = ({ index, showModal }) => {
   let product;
   switch (index) {
     case 1:
@@ -48,7 +48,11 @@ const simpleCard = ({ index }) => {
   return (
     <div className={classes}>
       <img src={product} alt="Thumb" />
-      <button title="Quick View" className="quickview">
+      <button
+        title="Quick View"
+        className="quickview"
+        onClick={() => showModal()}
+      >
         QUICK VIEW
       </button>
       <div className="content">

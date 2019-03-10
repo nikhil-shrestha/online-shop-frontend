@@ -8,18 +8,35 @@ import Categories from "../../components/Home/Categories/Categories";
 import Blog from "../../components/Home/Blog/Blog";
 import Testimonials from "../../components/Home/Testimonials/Testimonials";
 import FooterSlider from "../../components/Home/Slider/Footer/Footer";
+import Modal from "../../components/UI/Modal/QuickView/QuickView";
 
 import banner from "../../assets/images/offer-banner.png";
 import curtain from "../../assets/images/curtain.png";
 
 class Home extends Component {
+  state = {
+    quickView: false
+  };
+
+  showQuickView = () => {
+    this.setState({ quickView: true });
+  };
+
+  closeQuickView = () => {
+    this.setState({ quickView: false });
+  };
+
   render() {
     return (
       <Aux>
+        <Modal show={this.state.quickView} close={this.closeQuickView} />
+
         <HeaderSlider />
 
-        <Products />
+        <Products showModal={this.showQuickView} />
+
         <Categories />
+
         <SpecialProducts />
 
         <section className="container">
@@ -104,14 +121,6 @@ class Home extends Component {
               <div className="col-md-6 blog">
                 <Testimonials />
               </div>
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <div className="container">
-            <div className="col-md-6">
-              <div id="latestblog" />
             </div>
           </div>
         </section>
